@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<!--################## Customer form Altered view ####################3-->
+		<record id="partner_view_classification_form" model="ir.ui.view">
+		    <field name="name">res.partner.altered.classification</field>
+		    <field name="model">res.partner</field>
+		    <field name="inherit_id" ref="base.view_partner_form"/>
+		    <field name="arch" type="xml">
+		         <xpath expr="//page[@name='sales_purchases']" position="after">
+		              <page string="Preclassifiaction">
+		              	
+		              		
+			              		<label for="inmate_name"/>
+			              		<div>
+			              			<field name="inmate_name" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="inmate_identifier"/>
+			              		<div>
+			              			<field name="inmate_identifier" nolabel="1" style="width:30%"/>
+			              		</div >
+
+			              		<label for="inmate_suicide_watch"/>
+			              		<div>
+			              			<field name="inmate_suicide_watch" nolabel="1" widget="radio"/>
+			              		</div>
+			              		<label for="inmate_prea_risk"/>
+			              		<div>
+			              			<field name="inmate_prea_risk" nolabel="1" widget="radio"/>
+			              		</div>
+			              			<label for="inmate_health_issue"/>
+			              		<div>
+			              			<field name="inmate_health_issue" nolabel="1" widget="radio"/>
+			              		</div>
+			              		<field name="health_issue_note" nolabel="1" style="width:30%"/>
+			              		<div>
+			              			<label for="inmate_serious_health_issue"/>
+			              		</div>
+			              		<div>
+			              			<field name="inmate_serious_health_issue" nolabel="1" widget="radio"/>
+			              		</div>
+			              		<div>
+			              		<field name="srs_health_issue_note" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="inmate_assault"/>
+			              		<div>
+			              			<field name="inmate_assault" nolabel="1" widget="radio"/>
+			              		</div>
+			              		<label for="inmate_gang"/>
+			              		<div>
+			              			<field name="inmate_gang" nolabel="1" widget="radio"/>
+			              		</div>
+			              		<label for="completed_by"/>
+			              		<div>
+			              		 <field name="completed_by" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="fingerprint_id"/>
+			              		<div>
+			              		 <field name="fingerprint_id" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="class_date"/>
+			              		<div>
+			              		 <field name="class_date" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="inmate_first_name"/>
+			              		<div>
+			              		 	<field name="inmate_first_name" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="class_fbi_number"/>
+			              		<div>
+			              		 	<field name="class_fbi_number" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="class_state"/>
+			              		<div>
+			              		 	<field name="class_state" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<separator string="PREVIEW RESULT FOR EACH QUESTION"/>
+
+			              		<label for="severe_current_charges"/>
+			              		<div>
+			              		 	<field name="severe_current_charges" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="serious_felony"/>
+			              		<div>
+			              		 	<field name="serious_felony" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="institutional_assault"/>
+			              		<div>
+			              		 	<field name="institutional_assault" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="escape_history"/>
+			              		<div>
+			              		 	<field name="escape_history" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="disciplinary_history"/>
+			              		<div>
+			              		 	<field name="disciplinary_history" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="prior_felony"/>
+			              		<div>
+			              		 	<field name="prior_felony" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="prior_doc_timereserved"/>
+			              		<div>
+			              		 	<field name="prior_doc_timereserved" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<label for="age"/>
+			              		<div>
+			              		 	<field name="age" nolabel="1" style="width:30%"/>
+			              		</div>
+			              		<separator string="RECOMMENDED CUSTODY / HOUSING PLACEMENT LEVEL"/>
+			              			<label for="inmate_custody"/>
+			              			<div>
+			              			 	<field name="inmate_custody" nolabel="1" style="width:30%" widget="radio"/>
+			              			</div>
+			              			<label for="inmate_housing"/>
+			              			<div>
+			              			 	<field name="inmate_housing" nolabel="1" style="width:30%" widget="radio"/>
+			              			</div>
+			              			<label for="housing_note"/>
+			              			<div>
+			              			 	<field name="housing_note" nolabel="1" style="width:30%"/>
+			              			</div>
+			              			<label for="reason_for_place"/>
+			              			<div>
+			              			 	<field name="reason_for_place" nolabel="1" style="width:50%"/>
+			              			</div>
+			              			<label for="supervisor_review"/>
+			              			<div>
+			              			 	<field name="supervisor_review" nolabel="1" style="width:30%"/>
+			              			</div>
+			              			<label for="date_housing"/>
+			              			<div>
+			              			 	<field name="date_housing" nolabel="1" style="width:30%"/>
+			              			</div>
+
+
+			             		              	
+
+		              </page>
+		          </xpath>
+		    </field>
+		</record>
+	</data>
+</odoo>
